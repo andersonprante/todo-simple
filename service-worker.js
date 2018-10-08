@@ -21,7 +21,7 @@ var filesToCache = [
   `${HOST}/store.js`,
   `${HOST}/todo_e6.js`,
   `${HOST}/service-worker.js`,
-  `${HOST}/manifest.js`
+  `${HOST}/manifest.json`
 ];
 
 self.addEventListener('install', function(e) {
