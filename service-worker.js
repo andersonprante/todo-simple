@@ -2,7 +2,7 @@ const HOST='https://andersonprante.github.io/todo-simple'
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('./service-worker.js')
+    .register(`${HOST}service-worker.js`)
     .then(function () { console.log('Service Worker Registered'); });
 }
 
