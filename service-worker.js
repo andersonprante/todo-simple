@@ -18,7 +18,8 @@ var filesToCache = [
   'index.html',
   'store.js',
   'todo_e6.js',
-  'service-worker.js'
+  'service-worker.js',
+  'manifest.js'
 ];
 
 self.addEventListener('install', function(e) {
