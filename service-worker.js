@@ -1,3 +1,5 @@
+const HOST='https://andersonprante.github.io/todo-simple'
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./service-worker.js')
@@ -6,20 +8,20 @@ if ('serviceWorker' in navigator) {
 
 var cacheName = 'todo-app';
 var filesToCache = [
-  'imagens/edit.png',
-  'imagens/remove.png',
-  'imagens/icons/icon-128x128.png',
-  'imagens/icons/icon-144x144.png',
-  'imagens/icons/icon-152x152.png',
-  'imagens/icons/icon-192x192.png',
-  'imagens/icons/icon-256x256.png',
-  'lib/bulma.css',
-  'app.css',
-  'index.html',
-  'store.js',
-  'todo_e6.js',
-  'service-worker.js',
-  'manifest.js'
+  `${HOST}/imagens/edit.png`,
+  `${HOST}/imagens/remove.png`,
+  `${HOST}/imagens/icons/icon-128x128.png`,
+  `${HOST}/imagens/icons/icon-144x144.png`,
+  `${HOST}/imagens/icons/icon-152x152.png`,
+  `${HOST}/imagens/icons/icon-192x192.png`,
+  `${HOST}/imagens/icons/icon-256x256.png`,
+  `${HOST}/lib/bulma.css`,
+  `${HOST}/app.css`,
+  `${HOST}/index.html`,
+  `${HOST}/store.js`,
+  `${HOST}/todo_e6.js`,
+  `${HOST}/service-worker.js`,
+  `${HOST}/manifest.js`
 ];
 
 self.addEventListener('install', function(e) {
